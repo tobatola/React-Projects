@@ -38,3 +38,43 @@ function removeElement (newArr) {
 removeElement(concept);
 console.log(concept);
 
+//Nested arrays
+
+const nestedArr = [[1], [2, 3]];  //You can mutate an array saved to a variable declared with const but you cannot reassign the variable.
+
+console.log(nestedArr[1]); // Output: [2, 3]
+console.log(nestedArr[1][0]); // Output: 2
+
+//accessing data in a nested array
+
+const numberClusters = [[1,2], [3,4], [5,6]];
+
+const target = numberClusters[2][1]; //note: no brackets used
+
+console.log(target);
+
+//swapping data in an array
+
+let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
+
+console.log(secretMessage.length);
+secretMessage.pop();
+console.log(secretMessage.length);
+
+secretMessage.push('to', 'Program');
+console.log(secretMessage);
+
+secretMessage.splice(secretMessage.indexOf('easily'), 1, 'right'); 
+//replace "easily" with "right" using arr.splice(find index of easily, remove 1 term, insert "right")
+
+console.log(secretMessage);
+//secretMessage: Learning is not about what you get right the first time....
+
+secretMessage.shift();
+secretMessage.unshift('Programming');
+secretMessage.splice(secretMessage.indexOf('get'),5,'know');
+
+//secretMessage: Programming is not about what you know...
+
+console.log(secretMessage.join(' '));
+//displays secretMessage as a concatenated sentence with a space between each index value
