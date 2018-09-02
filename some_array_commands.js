@@ -1,3 +1,7 @@
+//MDN array documentation available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+//Manipulating an array
+
 const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
 
 groceryList.shift();
@@ -15,4 +19,22 @@ const pastaIndex = groceryList.indexOf('pasta');
 
 console.log(pastaIndex);
 
-//MDN array documentation available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+//manipulating an array thorugh a function call
+
+const concept = ['arrays', 'can', 'be', 'mutated'];
+
+function changeArr(arr){
+  arr[3] = 'MUTATED';
+}
+
+changeArr(concept);
+console.log(concept);
+
+function removeElement (newArr) {
+  newArr.pop();
+}
+
+removeElement(concept);
+console.log(concept);
+
