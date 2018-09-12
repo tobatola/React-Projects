@@ -113,6 +113,8 @@ let spaceship = {
         degree: 'Computer Engineering', 
         encourageTeam() { console.log('We got this!') },
        'favorite foods': ['cookies', 'cakes', 'candy', 'spinach'] }
+    }
+  };
 
        let firstPassenger = spaceship.passengers[1].name;    //Returns: Space Dog
        let firstPassenger = spaceship.passengers[1].name[0];    //Returns: S
@@ -179,5 +181,3 @@ for (let crewMember in spaceship.crew) {
 //for..in results: Lists all crew positions and names in object as 'Position: Name'
 for (let crewMember in spaceship.crew) {
     console.log(`${crewMember}: ${spaceship.crew[crewMember].name}')
-  };
-  
