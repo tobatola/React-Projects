@@ -179,5 +179,6 @@ for (let crewMember in spaceship.crew) {
   };
   
 //for..in results: Lists all crew positions and names in object as 'Position: Name'
-for (let crewMember in spaceship.crew) {
-    console.log(`${crewMember}: ${spaceship.crew[crewMember].name}')
+for (let crewMember in spaceship.crew) { 
+  console.log(`${crewMember}: ${spaceship.crew[crewMember].name}`)
+  };
