@@ -183,7 +183,7 @@ class Book extends Media {
 
 
 class Movie extends Media {
-    constructor(director, runTime) {
+    constructor(director, title, runTime) {
         super(title);
         this._director = director;
     this._runTime = runTime;
@@ -199,7 +199,7 @@ class Movie extends Media {
 
 
 class CD extends Media {
-    constructor(artist, songs) {
+    constructor(artist, title, songs) {
         super(title);
         this._artist = artist;
         this._songs = songs;
@@ -243,3 +243,5 @@ Book {
     _isCheckedOut: false,
     _author: 'Bill Bryson',
     _pages: 544 } */
+
+const speed = new Movie ('Jan De Bont', 'speed', 116);
