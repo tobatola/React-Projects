@@ -151,7 +151,10 @@ class Media {
     }
 
     getAverageRating() {
-        let ratingsSum = this.ratings.reduce((currentSum, rating) => currentSum + rating, 0);
+        let ratingsSum = 
+        this.ratings.reduce((currentSum, rating) => currentSum + rating, 0);
+        const lengthOfArray = this.ratings.length;
+        return (ratingsSum/lengthOfArray);
     }
 
     addRating(rating) {
@@ -231,6 +234,7 @@ historyOfEverything.addRating(7);                  // Results: "Please enter a v
 
 console.log(historyOfEverything.isCheckedOut);     // Results: false
 
+console.log(historyOfEverything.getAverageRating());   // Results: 4.6666
 console.log(historyOfEverything);
 /* New Results:
 Book {
